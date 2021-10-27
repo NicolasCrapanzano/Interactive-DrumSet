@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Test bateria</title>
+</head>
+<body>
+    
+    <div id="main">
+        <map name="drum">
+            <area shape="circle" coords="500,500,160" href="#boom" onclick="play('sounds/boom.wav')">
+            <area shape="circle" coords="250,0,140" href="#ride" onclick="play('sounds/ride.wav')">
+            <area shape="circle" coords="800,150,100" href="#hithat" onclick="play('sounds/hihat.wav')">
+            <area shape="circle" coords="700,320,80" href="#snare" onclick="play('sounds/snare.wav')">
+            <area shape="circle" coords="600,250,80" href="#tom2" onclick="play('sounds/tom.wav')">
+            <area shape="circle" coords="400,250,90" href="#tom3" onclick="play('sounds/tom.wav')">
+            <area shape="circle" coords="250,450,150" href="#tom" onclick="play('sounds/tom.wav')">
+        </map>
+        <img usemap="#drum" src="img/drum-set.png" alt="" class="drum">
+    </div>
+</body>
+<script>
+    function play(url){
+        new Audio(url).play();
+    }
+</script>
+</html>
